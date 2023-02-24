@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shadow {
+            background: lightgray;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .circle{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,76,171,1) 47%, rgba(0,212,255,1) 100%);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .circle:hover {
+            transform: translate(20px, -20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="shadow">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
