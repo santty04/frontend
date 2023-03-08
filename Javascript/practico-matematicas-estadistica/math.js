@@ -106,3 +106,4 @@ const calcularAlturaTrianguloEscaleno = (ladoBase, lado2, lado3) => {
         ),
     };
   };
+
