@@ -89,7 +89,6 @@ function calcularAlturaTriangulo(lado1, base) {
         console.warn('Este no es un triangulo Isosceles');
     } else {
         return Math.sqrt( (lado1 ** 2) - ( (base ** 2) ) / 4);
-
     }
 }
 
@@ -99,10 +98,7 @@ function calcularAlturaTriangulo(lado1, base) {
 const calcularAlturaTrianguloEscaleno = (ladoBase, lado2, lado3) => {
     const semiperimetro = (ladoBase + lado2 + lado3) / 2;
     return {
-      altura: (2 / ladoBase) * Math.sqrt(semiperimetro *
-            (semiperimetro - ladoBase) *
-            (semiperimetro - lado2) *
-            (semiperimetro - lado3)
+      altura: (2 / ladoBase) * Math.sqrt(semiperimetro * (semiperimetro - ladoBase) * (semiperimetro - lado2) * (semiperimetro - lado3)
         ),
     };
   };

@@ -215,3 +215,5 @@ salarios.push({
         {year:2023,empresa:'LexCorp',salario:3050,},
     ],
 });
+
+console.log(PlatziMath);
