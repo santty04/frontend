@@ -13,6 +13,11 @@ const playerPosition = {
   y: undefined,
 };
 
+const giftPosition = {
+  x: undefined,
+  y: undefined,
+};
+
 window.addEventListener("load", setCanvasSize);
 window.addEventListener("resize", setCanvasSize);
 
@@ -84,24 +89,42 @@ function moveByKeys(event) {
 }
 function moveUp() {
   console.log("Me quiero mover hacia arriba");
-  playerPosition.y -= elementsSize;
-  startGame();
+  if (playerPosition.y - elementsSize < 1) {
+    console.log(elementsSize);
+    console.log("OUT");
+  } else {
+    playerPosition.y -= elementsSize;
+    startGame();
+  }
 }
 
 function moveLeft() {
   console.log("Me quiero mover hacia izquierda");
-  playerPosition.x -= elementsSize;
-  startGame();
+  if (playerPosition.x - elementsSize < elementsSize) {
+    console.log("OUT");
+  } else {
+    playerPosition.x -= elementsSize;
+    startGame();
+  }
 }
 function moveRight() {
   console.log("Me quiero mover hacia derecha");
-  playerPosition.x += elementsSize;
-  startGame();
+  if (playerPosition.x + elementsSize > canvasSize) {
+    console.log("OUT");
+  } else {
+    playerPosition.x += elementsSize;
+    startGame();
+  }
 }
 function moveDown() {
   console.log("Me quiero mover hacia abajo");
-  playerPosition.y += elementsSize;
-  startGame();
+
+  if (playerPosition.y + elementsSize > canvasSize) {
+    console.log("OUT");
+  } else {
+    playerPosition.y += elementsSize;
+    startGame();
+  }
 }
 
 // window.innerHeight
