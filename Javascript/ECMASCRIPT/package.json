@@ -12,5 +12,8 @@
   ],
   "author": "Santiago Arango <arangosanti05@gmail.com>",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  }
 }
