@@ -7,5 +7,3 @@ function hello() {
 }
 
 hello();
-
- 

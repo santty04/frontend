@@ -1,5 +1,5 @@
-const string = "Javascript es un maravilloso lenguaje de programacion";
+const string = "Javascript es un maravilloso lenguaje de programacion Javascript";
 
-const replacedString = string.replace("Javascript", "TypeScript");
+const replacedString = string.replaceAll("Javascript", "TypeScript");
 
 console.log(replacedString);
