@@ -1,4 +1,4 @@
-var numero = 1;
+var numero = 15;
 
 switch (numero) {
     case 1:
@@ -10,10 +10,12 @@ switch (numero) {
     case 100:
         console.log("Soy un 100");
         break;
+    case 15:
+        console.log("Soy un 15");
+        break;
     default:
         console.log("No soy nada");
 }
-
 
 
 
