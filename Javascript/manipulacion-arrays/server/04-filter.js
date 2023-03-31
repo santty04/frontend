@@ -45,7 +45,7 @@ const orders = [
       },
   ]
 
-const rta3 = orders.filter(item => item.delivered && item.total >=100);
+const rta3 = orders.filter(item => item.delivered && item.total >= 100);
 console.log('rta3', rta3);
 
 const search = (query) => {
